@@ -2,11 +2,11 @@ This code analyzes residential electricity consumption patterns using a UK smart
 
 **Key Features:**
 
-1. **Data Loading and Preprocessing:** The script begins by loading the dataset (`LCL-June2015v2_99.csv`), handling data type conversions, and exploring the data through visualizations (time-series plots, distributions, and box plots).  It also cleans the data by removing unnecessary columns, handling missing values, and converting the energy consumption to numeric values.  Monthly averages of energy consumption are calculated and plotted.
+1. **Data Loading and Preprocessing:** The script begins by loading the dataset (LCL-June2015v2_99.csv), handling data type conversions, and exploring the data through visualizations (time-series plots, distributions, and box plots).  It also cleans the data by removing unnecessary columns, handling missing values, and converting the energy consumption to numeric values.  Monthly averages of energy consumption are calculated and plotted.
 
-2. **Feature Engineering:** The code engineers a new feature, 'energy\_kWh', representing energy consumption in kilowatt-hours, handles missing values and sets the 'DateTime' column as the index, creating a time series dataset.
+2. **Feature Engineering:** The code engineers a new feature, energy\_kWh, representing energy consumption in kilowatt-hours, handles missing values and sets the DateTime column as the index, creating a time series dataset.
 
-3. **Data Scaling:**  It normalizes the 'energy\_kWh' data using `MinMaxScaler` to improve model performance.
+3. **Data Scaling:**  It normalizes the 'energy\_kWh' data using MinMaxScaler to improve model performance.
 
 4. **Sequence Creation:**  The code transforms the time series data into sequences of a specified length (24 half-hour periods in this case) to prepare it for recurrent neural networks.
 
@@ -19,7 +19,7 @@ This code analyzes residential electricity consumption patterns using a UK smart
 
 **Dependencies:**
 
-The code relies on several Python libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `tensorflow`, `prophet`.  Make sure these libraries are installed before running the script.
+The code relies on several Python libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, tensorflow, prophet.  Make sure these libraries are installed before running the script.
 
 **To run:**
 
